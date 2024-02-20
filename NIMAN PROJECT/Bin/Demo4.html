@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Moments Events</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <!-- Hero Section with Carousel -->
+    <header class="hero">
+      <button class="nav-button prev" onclick="prevImage()">❮</button>
+      <div class="carousel">
+        <img src="Source/Img/Card_bg1.jpg" alt="Wedding Image 1" />
+        <img src="Source/Img/Card_bg2.jpg" alt="Wedding Image 2" />
+        <img src="Source/Img/Card_bg3.jpg" alt="Wedding Image 3" />
+        <img src="Source/Img/Card_bg1.jpg" alt="Wedding Image 1" />
+        <img src="Source/Img/Card_bg2.jpg" alt="Wedding Image 2" />
+        <img src="Source/Img/Card_bg3.jpg" alt="Wedding Image 3" />
+        <!-- Add more images as needed -->
+      </div>
+      <button class="nav-button next" onclick="nextImage()">❯</button>
+      <div class="hero-content">
+        <h1>Your Perfect Wedding Awaits</h1>
+      </div>
+    </header>
+
+    <!-- Your existing HTML content -->
+
+    <!-- Add your scripts if needed -->
+    <script>
+      // JavaScript for Carousel navigation
+      let currentIndex = 0;
+      const images = document.querySelectorAll('.carousel img');
+
+      function showImage(index) {
+        // Hide all images
+        images.forEach(img => img.style.display = 'none');
+        // Show the selected image
+        images[index].style.display = 'block';
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      }
+
+      // Show the initial image
+      showImage(currentIndex);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link to Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Add your custom CSS styles here */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa; /* Bootstrap background color */
+        color: #343a40; /* Bootstrap text color */
+      }
+
+      header {
+        background-color: #007bff; /* Bootstrap primary color */
+        color: #ffffff; /* Bootstrap text color */
+      }
+
+      section {
+        margin-top: 2rem;
+      }
+
+      footer {
+        background-color: #f8f9fa; /* Bootstrap background color */
+        color: #6c757d; /* Bootstrap text color */
+      }
+    </style>
+    <title>Acme Inc - Dream Wedding</title>
+  </head>
+
+  <body class="font-sans">
+    <div class="flex flex-col min-h-screen">
+      <header
+        class="px-4 lg:px-6 h-14 flex items-center bg-primary text-white shadow-md"
+      >
+        <!-- Bootstrap Navbar -->
+        <div class="container-fluid">
+          <a class="navbar-brand flex items-center" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6 me-2"
+            >
+              <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+            </svg>
+            <span class="sr-only">Acme Inc</span>
+          </a>
+          <nav class="ml-auto">
+            <!-- Bootstrap Nav Links -->
+            <ul class="navbar-nav flex gap-4 sm:gap-6">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-sm font-medium hover:underline underline-offset-4"
+                  href="#"
+                >
+                  Features
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-sm font-medium hover:underline underline-offset-4"
+                  href="#"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-sm font-medium hover:underline underline-offset-4"
+                  href="#"
+                >
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-sm font-medium hover:underline underline-offset-4"
+                  href="#"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <section class="w-full pt-12 md:pt-24 lg:pt-32">
+          <div class="container px-4 md:px-6">
+            <div
+              class="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-12"
+            >
+              <div class="space-y-4">
+                <div
+                  class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                >
+                  Services
+                </div>
+                <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Your Dream Wedding, Our Expertise
+                </h1>
+                <p
+                  class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                >
+                  Let us take care of every detail. From the perfect venue to
+                  exquisite decorations, we'll make your special day
+                  unforgettable.
+                </p>
+              </div>
+              <div class="mx-auto aspect-[2/1] overflow-hidden rounded-xl">
+                <div
+                  class="relative"
+                  role="region"
+                  aria-roledescription="carousel"
+                >
+                  <div
+                    role="group"
+                    aria-roledescription="slide"
+                    class="min-w-0 shrink-0 grow-0 basis-full pl-4"
+                  >
+                    <img
+                      src="Source/Img/Card_bg4.jpg"
+                      width="400"
+                      height="200"
+                      alt="Image"
+                      class="aspect-[2/1] object-cover object-center rounded-t-xl overflow-hidden"
+                    />
+                  </div>
+                  <div
+                    role="group"
+                    aria-roledescription="slide"
+                    class="min-w-0 shrink-0 grow-0 basis-full pl-4"
+                  >
+                    <img
+                      src="Source/Img/Card_bg4.jpg"
+                      width="400"
+                      height="200"
+                      alt="Image"
+                      class="aspect-[2/1] object-cover object-center rounded-t-xl overflow-hidden"
+                    />
+                  </div>
+                  <div
+                    role="group"
+                    aria-roledescription="slide"
+                    class="min-w-0 shrink-0 grow-0 basis-full pl-4"
+                  >
+                    <img
+                      src="Source/Img/Card_bg4.jpg"
+                      width="400"
+                      height="200"
+                      alt="Image"
+                      class="aspect-[2/1] object-cover object-center rounded-t-xl overflow-hidden"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32 border-t">
+          <div class="container px-4 md:px-6">
+            <div
+              class="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-12"
+            >
+              <div class="mx-auto aspect-[2/1] overflow-hidden rounded-xl">
+                <div
+                  class="relative"
+                  role="region"
+                  aria-roledescription="carousel"
+                >
+                  <div
+                    role="group"
+                    aria-roledescription="slide"
+                    class="min-w-0 shrink-0 grow-0 basis-full pl-4"
+                  >
+                    <img
+                      src="Source/Img/Card_bg4.jpg"
+                      width="400"
+                      height="200"
+                      alt="Image"
+                      class="aspect-[2/1] object-cover object-center rounded-t-xl overflow-hidden"
+                    />
+                  </div>
+                  <div
+                    role="group"
+                    aria-roledescription="slide"
+                    class="min-w-0 shrink-0 grow-0 basis-full pl-4"
+                  >
+                    <img
+                      src="Source/Img/Card_bg4.jpg"
+                      width="400"
+                      height="200"
+                      alt="Image"
+                      class="aspect-[2/1] object-cover object-center rounded-t-xl overflow-hidden"
+                    />
+                  </div>
+                  <div
+                    role="group"
+                    aria-roledescription="slide"
+                    class="min-w-0 shrink-0 grow-0 basis-full pl-4"
+                  >
+                    <img
+                      src="Source/Img/Card_bg4.jpg"
+                      width="400"
+                      height="200"
+                      alt="Image"
+                      class="aspect-[2/1] object-cover object-center rounded-t-xl overflow-hidden"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div
+                  class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                >
+                  Services
+                </div>
+                <h2
+                  class="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-6xl"
+                >
+                  The Perfect Venue. Delicious Food. Beautiful Decor.
+                </h2>
+                <p
+                  class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                >
+                  Let us take care of every detail. From the perfect venue to
+                  exquisite decorations, we'll make your special day
+                  unforgettable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32 border-t">
+          <div class="container px-4 md:px-6">
+            <div
+              class="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-12"
+            >
+              <div class="space-y-4">
+                <div
+                  class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                >
+                  Testimonials
+                </div>
+                <h2
+                  class="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-6xl"
+                >
+                  "Unforgettable. Magical. Perfect."
+                </h2>
+                <p
+                  class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                >
+                  Our clients love us. Let us make your special day
+                  unforgettable.
+                </p>
+              </div>
+              <div class="grid gap-4">
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="Source/Img/Card_bg4.jpg"
+                    width="80"
+                    height="80"
+                    alt="User"
+                    class="rounded-full overflow-hidden aspect-square object-cover object-center"
+                  />
+                  <blockquote class="italic text-gray-500 dark:text-gray-400">
+                    "The team at Acme Weddings made our dream wedding a reality.
+                    Everything was perfect, from the stunning decorations to the
+                    delicious food. We couldn't have asked for more. Highly
+                    recommended!"
+                  </blockquote>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="Source/Img/Card_bg4.jpg"
+                    width="80"
+                    height="80"
+                    alt="User"
+                    class="rounded-full overflow-hidden aspect-square object-cover object-center"
+                  />
+                  <blockquote class="italic text-gray-500 dark:text-gray-400">
+                    "The team at Acme Weddings made our dream wedding a reality.
+                    Everything was perfect, from the stunning decorations to the
+                    delicious food. We couldn't have asked for more. Highly
+                    recommended!"
+                  </blockquote>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img
+                    src="Source/Img/Card_bg4.jpg"
+                    width="80"
+                    height="80"
+                    alt="User"
+                    class="rounded-full overflow-hidden aspect-square object-cover object-center"
+                  />
+                  <blockquote class="italic text-gray-500 dark:text-gray-400">
+                    "The team at Acme Weddings made our dream wedding a reality.
+                    Everything was perfect, from the stunning decorations to the
+                    delicious food. We couldn't have asked for more. Highly
+                    recommended!"
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="flex flex-col gap-2 sm:flex-row py-6 w-full items-center px-4 md:px-6 border-t bg-light"
+      >
+        <!-- Bootstrap Footer Content -->
+        <p class="text-xs text-muted">© 2024 Acme Inc. All rights reserved.</p>
+        <nav class="ml-auto flex gap-4 sm:gap-6">
+          <a class="text-xs hover:underline underline-offset-4" href="#">
+            Terms of Service
+          </a>
+          <a class="text-xs hover:underline underline-offset-4" href="#">
+            Privacy
+          </a>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Link to Bootstrap JS CDN (if needed) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>
